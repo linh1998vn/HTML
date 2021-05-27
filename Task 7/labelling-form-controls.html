@@ -1,0 +1,19 @@
+<html>
+
+<head>
+	<title>Labelling Form Controls</title>
+</head>
+
+<body>
+	<form action="http://www.example.com/subscribe.php"> <!-- Noi gui form -->
+		<label>Age: <input type="text" name="age" /></label> <!-- Nhan ten la age vs type input text ten bien age -->
+		<br/>
+		Gender:
+		<input id="female" type="radio" name="gender" value="f"> <!--dia chi female type la radio tne bien la gender vs gia tri f-->
+		<label for="female">Female</label> <!-- nhan cho female -->
+		<input id="male" type="radio" name="gender" value="m"> <!--dia chi male type la radio tne bien la gender vs gia tri m-->
+		<label for="male">Male</label> <!-- nhan cho male -->
+	</form>
+</body>
+
+</html>
