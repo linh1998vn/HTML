@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aligning Form Controls - Solution</title>
+		<style type="text/css">
+			body {
+				font-family: Arial, Verdana, sans-serif; /* font chu */
+			}
+			div {									/* css cho div */
+				border-bottom: 1px solid #efefef; /* duong ranh gioi cuoi la 1 px ran mau trang */
+				margin: 10px;				/* vien cach phan tu tiep 10px */
+				padding-bottom: 10px;		/* noi dung cach vien duoi 10px */
+				width: 260px;				/* rong 260 px */
+			}
+			.title {				/* css cho title */
+				float: left;		/* hien thi ben trai */
+				width: 100px;		/* rong 100px */
+				text-align: right;	/* chu nam ben phai */
+				padding-right: 10px;	/* cach vien phai 10px */
+			}
+			.radio-buttons label { /* css cho radio-buttons label */
+				float: none; /* ko noi */
+			}
+			.submit {				/* css cho submit */
+				text-align: right;	/* chu nam ben phai */
+			}
+		</style>
+	</head>
+	<body>
+		<form action="example.php" method="post">
+			<div>
+				<label for="name" class="title">Name:</label>
+				<input type="text" id="name" name="name" />
+			</div>
+			<div>
+				<label for="email" class="title">Email:</label>
+				<input type="email" id="email" name="email" />
+			</div>
+			<div class="radio-buttons">
+				<span class="title">Gender:</span>
+				<input type="radio" name="gender" id="male" value="M" />
+				<label for="male">M</label>
+				<input type="radio" name="gender" id="female" value="F" />
+				<label for="female">F</label><br />
+			</div>
+			<div class="submit">
+				<input type="submit" value="Register" id="submit" />
+			</div>
+		</form>
+	</body>
+</html>

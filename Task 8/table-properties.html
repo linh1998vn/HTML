@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Table Properties</title>
+		<style type="text/css">
+			body {	/* css cho body */
+				font-family: Arial, Verdana, sans-serif; /* font chu */
+				color: #111111;	/* mau font */
+			}
+			table {
+				width: 600px;	/* table rong 600px */
+			}
+			th, td {
+				padding: 7px 10px 10px 10px; /*th va td cach vien 7 10 10 10 px */
+			}
+			th {
+				text-transform: uppercase; /* th viet hoa */
+				letter-spacing: 0.12em;		/* chu cach nhau 0.12em */
+				font-size: 90%;  /* font lon 90% */
+				border-bottom: 2px solid #111111; /* vien tren */
+				border-top: 1px solid #999; /* vien duoi */
+				text-align: left; /* chu nam ben trai */
+			}
+			tr.even {
+				background-color: #efefef; /* mau nen */
+			}
+			tr:hover {
+				background-color: #c3e6e5; /* mau nen */
+			}
+			.money {
+				text-align: right; /* chu nam ben phai */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>First Edition Auctions</h1>
+		<table>
+			<tr>
+				<th>Author</th>
+				<th>Title</th>
+				<th class="money">Reserve Price</th>
+				<th class="money">Current Bid</th>
+			</tr>
+			<tr>
+				<td>E.E. Cummings</td>
+				<td>Tulips & Chimneys</td>
+				<td class="money">$2,000.00</td>
+				<td class="money">$2,642.50</td>
+			</tr>
+			<tr class="even">
+				<td>Charles d'Orleans</td>
+				<td>Poemes</td>
+				<td class="money"></td>
+				<td class="money">$5,866.00</td>
+			</tr>
+			<tr>
+				<td>T.S. Eliot</td>
+				<td>Poems 1909 - 1925</td>
+				<td class="money">$1,250.00</td>
+				<td class="money">$8,499.35</td>
+			</tr>
+			<tr class="even">
+				<td>Sylvia Plath</td>
+				<td>The Colossus</td>
+				<td class="money"></td>
+				<td class="money">$1031.72</td>
+			</tr>
+		</table>
+	</body>
+</html>

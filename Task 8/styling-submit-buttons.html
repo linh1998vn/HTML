@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Submit Buttons</title>
+		<style type="text/css">
+			input {
+				font-size: 120%; /* co chu */
+				color: #5a5854;	/* mau chu */
+				background-color: #f2f2f2; /* mau nen */
+				border: 1px solid #bdbdbd; /* vien va mau vien */
+				border-radius: 5px;	/* ban kinh */
+				padding: 5px 10px 5px 10px; /* phan tu trong cach vien */
+				background-repeat: no-repeat;	/* khong lap lai nen */
+				background-position: 8px 9px;	/* vi tri nen */
+				display: block; /* hien thi doc */
+				margin-bottom: 10px; /* vien cach cac phan tu khac o day 10px */
+			}
+			input#submit {
+				color: #444444; /* mau */
+				text-shadow: 0px 1px 1px #ffffff; /* bong cua text */
+				border-bottom: 2px solid #b2b2b2; /* vien duoi */
+				background-color: #b9e4e3; /* mau nen */
+				background: -webkit-gradient(linear, left top, left bottom, from(#beeae9), to(#a8cfce));
+				background: -moz-linear-gradient(top, #beeae9, #a8cfce);
+				background: -o-linear-gradient(top, #beeae9, #a8cfce);
+				background: -ms-linear-gradient(top, #beeae9, #a8cfce);
+			}
+			input#submit:hover { /* khi dua chuot vao submit */
+				color: #333333;	/* mau */
+				border: 1px solid #a4a4a4;	/* do rong cua vien va mau */
+				border-top: 2px solid #b2b2b2; /* do sac net va rong,mau cua vien tren */
+				background-color: #a0dbc4; /* mau nen */
+				background: -webkit-gradient(linear, left top, left bottom, from(#a8cfce), to(#beeae9));
+				background: -moz-linear-gradient(top, #a8cfce, #beeae9);
+				background: -o-linear-gradient(top, #a8cfce, #beeae9);
+				background: -ms-linear-gradient(top, #a8cfce, #beeae9);
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="submit" value="Register" id="submit" />
+		</form>
+	</body>
+</html>

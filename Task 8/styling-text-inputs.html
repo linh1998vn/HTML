@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Text Inputs</title>
+		<style type="text/css">
+			input {
+				font-size: 120%;	/* co chu 120% */
+				color: #5a5854;		/* mau chu */
+				background-color: #f2f2f2; /* mau nen */
+				border: 1px solid #bdbdbd; /* vien 1px va mau vien */
+				border-radius: 5px;		/* ban kinh vien */
+				padding: 5px 5px 5px 30px;	/* khoang cach cac phan tu vs vien */
+				background-repeat: no-repeat;	/* nen ko lap lai */
+				background-position: 8px 9px;	/* vi tri nen */
+				display: block; /* hien theo cot */
+				margin-bottom: 10px; /* vien duoi cach 10 px */
+			}
+			input:focus, input:hover {
+				background-color: #ffffff;	/* dau mau nen khi dua chuot va click cuot */
+				border: 1px solid #b1e1e4;	/* vien va mau vien khi dua chuot va click chuot */
+			}
+			input#email {
+				background-image: url("images/email.png"); /* anh nen */
+			}
+			input#twitter {
+				background-image: url("images/twitter.png"); /* anh nen */
+			}
+			input#web {
+				background-image: url("images/web.png"); /* anh nen */
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="text" id="email" />
+			<input type="text" id="twitter" />
+			<input type="text" id="web" />
+		</form>
+	</body>
+</html>

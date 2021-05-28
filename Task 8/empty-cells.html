@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Empty Cells</title>
+		<style type="text/css">
+			td {					/* css cho td */
+				border: 1px solid #0088dd; /* vien ran mau xanh */
+				padding: 15px;} /* cach vien 15px */
+			table.one {			/* css cho table.one */
+				empty-cells: show;}		/* thay phan tu ben trong */
+			table.two {				/* css cho table two */
+				empty-cells: hide;}		/*giau phan tu ben trong */
+		</style>
+	</head>
+	<body>
+		<table class="one">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+		<table class="two">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td></td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Styling Fieldsets and Legends</title>
+		<style type="text/css">
+			* {
+				font-family: Arial, Verdana, sans-serif;	/* font */
+				color: #665544; /* mau chu */
+			 }
+			input {
+				border-bottom: 1px dotted #dcdcdc; /* vien duoi va mau */
+				border-top: none;
+				border-right: none;	/* ko co vien ten trai phai */
+				border-left: none;
+				padding: 5px; /* phan tu trong cach vien 5px */
+				width: 280px; /* rong 280 */
+				margin-bottom: 20px; /* vien cach cac phan tu khac 20px */
+			}
+			input:focus { /* click chuot */
+				border: 1px dotted #dcdcdc; /* vien  va mau vien */
+				outline: none; /*  vien ngoai */
+			}
+			input#submit { /* nut submit */
+				color: #ffffff;	/* mau chu */
+				background-color: #665544; /* mau nen */
+				border: none; /* ko vien */
+				border-radius: 5px; /* ban kinh vien */
+				width: 80px; /* rong */
+				text-transform: uppercase; /* chu in hoa */
+			}
+			input#submit:hover { /*di chuot qua */
+				color: #665544;  /* mau chu */
+				background-color: #efefef; /* mau nen */
+			}
+			fieldset {
+				width: 350px;		/* rong 350px */
+				border: 1px solid #dcdcdc; /* vien */
+				border-radius: 10px; /* ban kinh vien */
+				padding: 20px; /* phan tu cach vien 20px */
+				text-align: right; /* chu ben phai */
+			}
+			legend {
+				background-color: #efefef; /* mau nen */
+				border: 1px solid #dcdcdc; /* vien va mau vien */
+				border-radius: 10px; /* ban kinh vien */
+				padding: 10px 20px; /* phan tu cach vien */
+				text-align: left; /* chu ben trai */
+				text-transform: uppercase; /* chuyen thanh chu in hoa */
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<legend>Newsletter</legend>
+
+				<label for="name">Name: </label>
+				<input type="text" id="name" />
+
+				<label for="email">Email: </label>
+				<input type="text" id="email" />
+
+				<input type="submit" value="Subscribe" id="submit" />
+			</fieldset>
+		</form>
+	</body>
+</html>
