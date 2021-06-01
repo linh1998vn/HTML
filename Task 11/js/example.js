@@ -5,7 +5,7 @@ var message = ',please check your order:';
 var welcome = greeting + name +message;
 
 var sign = 'Montagur House';
-var titles = sign.length;
+var tiles = sign.length;
 var subTotal = tiles * 5;
 var shipping = 7;
 var grandTotal = subTotal + shipping;
