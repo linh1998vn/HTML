@@ -3,7 +3,7 @@ function Hotel(name, rooms, booked){
     this.rooms = rooms;
     this.booked = booked;
     this.checkAvailability = function(){
-        return this.room - this.booked;
+        return this.rooms - this.booked;
     };
 };
 
